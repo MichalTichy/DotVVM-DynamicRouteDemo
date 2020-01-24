@@ -1,0 +1,7 @@
+﻿@viewModel DynamicRouteDemo.ViewModels.DefaultViewModel, DynamicRouteDemo
+@masterPage Views/MasterPage.dotmaster
+<dot:Content ContentPlaceHolderID="MainContent">
+    <cc:DynamicRouteLink RouteName="{value: RouteName}" Text="{value: "Go to " + RouteName}" />
+    <dot:Button Click="{command: SetRouteToA()}" Text="Set route to A" />
+    <dot:Button Click="{command: SetRouteToB()}" Text="Set route to B" />
+</dot:Content>
